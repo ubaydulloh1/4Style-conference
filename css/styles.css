@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ============== default classes ============== */
+.active-page a{
+    color: #5d8c80 !important;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* ================================================= */
+
+nav{
+    background-color: #293d51;
+}
+
+.container{
+    margin: 0px 200px;
+    padding: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo-text{
+    border-top: 2px solid #5d8c80;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #aaa;
+    line-height: 40px;
+}
+
+.nav-container{
+    width: 50%;
+    text-align: right;
+}
+
+.nav-container h3{
+    padding: 30px;
+    color: #5d8c80;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    /* color: #fff; */
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links li a:hover{
+    color: #5d8c80;
+}
+
+/* ============================= Header section ======================== */
+
+header{
+    background-color: #293d51;
+}
+
+.header-elements{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.header-elements h1{
+    color: #5d8c80;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.header-elements h3{
+    color: #aaa;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.register-now{
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #2a3f59;
+}
+
+.register-now a{
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    text-transform: uppercase;
+}
+
+.register-now a:hover {
+    background-color: #fff;
+    color: #5d8c80;
+}
+
+/* ======================== Section ====================== */
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.section-card{
+    width: 30%;
+    color: #999;
+}
+
+.section-card h4 a{
+    color: #999;
+    text-transform: uppercase;
+}
+
+.section-card a img{
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section-card h3 a{
+    color: #5d8c80;
+}
+
+.section-card p{
+    padding-top: 20px;
+    color: #999;
+}
+
+/* ================== Footer =================== */
+
+footer{
+    background-color: #2a3f59;
+}
+
+.copyright{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p{
+    width: 50%;
+    color: #5d8c80;
+    font-weight: 600;
+}
+
+.copyright ul{
+    width: 350px;
+}
+
+.footer-links li a{
+    font-size: 12px;
+}
+
+/* ============================ SPEAKERS.HTML =========================
+===============================               =========================*/
+
+.speakers-header{
+    text-align: center;
+    background: linear-gradient(90deg, #71a598, #f9f9f9);
+}
+
+.speakers-header .speakers-header-elements h1{
+    font-size: 2.5em;
+    padding: 30px 0px;
+    color: #5d8c80;
+}
+
+.speakers-header .speakers-header-elements h3{
+    color: #777;
+    line-height: 30px;
+    letter-spacing: 1.3px;
+    padding-bottom: 25px;
+}
+
+.speakers-card{
+    display: flex;
+    padding:20px;
+}
+
+.speakers-card-text{
+    width: 65%;
+}
+
+.speakers-card .speakers-card-text h2{
+    color: #5d8c80;
+    padding: 15px 0px;
+}
+
+.speakers-card .speakers-card-text h5{
+    color: #999;
+    padding: 10px 0px;
+}
+
+.speakers-card .speakers-card-text p{
+    padding: 8px 0px;
+    color: #777;
+    font-weight: 600;
+    text-indent: 10px;
+}
+
+.speakers-card-profile{
+    text-align: center;
+    width: 35%;
+}
+
+.speakers-card-profile .card-profile{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 90%;
+    height: 180px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.speakers-card-profile .card-profile img{
+    width: 50%;
+    border-radius: 50%;
+    margin-top: -40px;
+}
+
+.speakers-card-profile .card-profile p a{
+    font-weight: 600;
+    color: #5d8c80;
+}
+
+/* ============================= SCHEDULE HTML =========================
+   =============================               =========================*/
+
+
+.table-workshops{
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.table-workshops td:first-child{
+    text-align: right;
+}
+
+.table-workshops td:nth-child(2), .table-workshops td:last-child{
+    border-bottom: 1px solid #ddd;
+}
+
+.table-workshops th, .table-workshops td{
+    padding: 20px 25px;
+}
+
+.table-workshops th, .table-workshops td h4{
+    color: #5d8c80;
+}
+
+td{
+    color: #aaa;
+}
+
+.table-workshops td p{
+    color: #666;
+}
+
+
+/* ============================== Venue ================================= 
+=================================       =================================*/
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.venue-text{
+    padding: 50px 0px;
+}
+
+.venue-text h3{
+    color: #5d8c80;
+}
+
+.venue-text p{
+    color: #aaa;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+/* =============================== Register ============================ */
+/* ===============================          ============================ */
+
+.register{
+    display: flex;
+    padding: 50px 0px;
+}
+
+.register .register-texts{
+    width: 60%;
+}
+
+.register form{
+    width: 40%;
+}
+
+.register .register-texts h3{
+    color: #5d8c80;
+    padding-bottom: 20px;
+}
+
+.register .register-texts h5{
+    color: #aaa;
+}
+
+.register .register-texts p{
+    color: #777;
+    font-weight: 600;
+    padding:20px 0px;
+}
+
+.register .register-texts h4{
+    color: #5d8c80;
+    padding-bottom: 20px;
+}
+
+.register .register-texts ul{
+    padding-left: 40px;
+    list-style-type:square;
+    color: #777;
+    font-weight: 600;
+}
+
+/* ==================== form ================ */
+
+form{
+    padding: 0px 30px;
+    font-weight: 600;
+}
+
+form label span{
+    color: #5d8c80;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 8px 6px;
+    margin: 10px 0px 20px 0px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+form select{
+    padding: 5px 10px;
+    outline: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 10px 0px 25px 0px;
+}
+
+form button{
+    color: #fff;
+    background-color: #5d8c80;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form button:hover{
+    /* color: #5d8c80; */
+    background-color: #71a598;
+    /* border: 1px solid #5d8c80; */
+}
+
+form ::placeholder{
+    font-size: 16px;
+    color: #888;
+    font-weight: 600;
+}
